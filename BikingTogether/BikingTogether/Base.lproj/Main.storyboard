@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,83 +22,50 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-ah-HGy">
-                                <rect key="frame" x="340" y="300" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Login with Facebook">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="550" width="155" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="loginTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KOq-IJ-OdP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19n-Oo-evK">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Skip">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="CDW-dt-Nvf" kind="presentation" id="C2v-sf-Mtj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biking Together" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-gA-nS3">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mo8-fV-FuO" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="419" width="200" height="40"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="rGj-Xh-S7E" secondAttribute="width" id="PSI-sa-JLZ"/>
                             <constraint firstAttribute="height" secondItem="rGj-Xh-S7E" secondAttribute="height" id="TBQ-oF-ATJ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AE0-ah-HGy" secondAttribute="bottom" constant="20" id="TeS-ng-Sob"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="19n-Oo-evK" secondAttribute="bottom" constant="20" id="Wlm-d6-MUR"/>
-                            <constraint firstItem="19n-Oo-evK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cxF-YI-tka"/>
                             <constraint firstAttribute="centerX" secondItem="NHf-gA-nS3" secondAttribute="centerX" id="dsV-0s-7RB"/>
-                            <constraint firstItem="19n-Oo-evK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="f4g-P0-Uez"/>
-                            <constraint firstItem="AE0-ah-HGy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gR1-VS-wsa"/>
                             <constraint firstItem="NHf-gA-nS3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="uU9-yM-wWG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rGj-Xh-S7E"/>
-                                <exclude reference="19n-Oo-evK"/>
                                 <exclude reference="NHf-gA-nS3"/>
+                                <exclude reference="mo8-fV-FuO"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="dsV-0s-7RB"/>
                                 <exclude reference="uU9-yM-wWG"/>
-                                <exclude reference="cxF-YI-tka"/>
-                                <exclude reference="f4g-P0-Uez"/>
                                 <exclude reference="PSI-sa-JLZ"/>
                                 <exclude reference="TBQ-oF-ATJ"/>
-                                <exclude reference="gR1-VS-wsa"/>
-                                <exclude reference="TeS-ng-Sob"/>
-                                <exclude reference="Wlm-d6-MUR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rGj-Xh-S7E"/>
-                                <include reference="19n-Oo-evK"/>
                                 <include reference="NHf-gA-nS3"/>
+                                <include reference="mo8-fV-FuO"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="dsV-0s-7RB"/>
                                 <include reference="uU9-yM-wWG"/>
-                                <include reference="cxF-YI-tka"/>
-                                <include reference="f4g-P0-Uez"/>
                                 <include reference="PSI-sa-JLZ"/>
                                 <include reference="TBQ-oF-ATJ"/>
-                                <include reference="gR1-VS-wsa"/>
-                                <include reference="TeS-ng-Sob"/>
-                                <include reference="Wlm-d6-MUR"/>
                             </mask>
                         </variation>
                     </view>

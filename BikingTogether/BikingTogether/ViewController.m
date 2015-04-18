@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 
@@ -25,6 +27,10 @@
     UIImage *image = [UIImage imageNamed:@"login.jpg"];
     self.imageView.image = image;
     
+   // FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+   // loginButton.center = self.view.center;
+    
+    //[self.view addSubview:loginButton];
     
 //    CAGradientLayer *gradient = [CAGradientLayer layer];
 //    gradient.frame = self.view.bounds;

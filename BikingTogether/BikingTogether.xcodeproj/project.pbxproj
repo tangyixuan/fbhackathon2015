@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43C0C081AE2A407006EEC33 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C051AE2A407006EEC33 /* FBSDKCoreKit.framework */; };
+		A43C0C091AE2A407006EEC33 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C061AE2A407006EEC33 /* FBSDKLoginKit.framework */; };
+		A43C0C0A1AE2A407006EEC33 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C071AE2A407006EEC33 /* FBSDKShareKit.framework */; };
 		A476D8971AE2545100623126 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8961AE2545100623126 /* ProfileVC.m */; };
 		A476D89A1AE2547200623126 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8991AE2547200623126 /* PlanListVC.m */; };
 		A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89C1AE2548C00623126 /* HistoryVC.m */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43C0C051AE2A407006EEC33 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A43C0C061AE2A407006EEC33 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A43C0C071AE2A407006EEC33 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		A476D8951AE2545100623126 /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		A476D8961AE2545100623126 /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		A476D8981AE2547200623126 /* PlanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanListVC.h; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43C0C091AE2A407006EEC33 /* FBSDKLoginKit.framework in Frameworks */,
+				A43C0C081AE2A407006EEC33 /* FBSDKCoreKit.framework in Frameworks */,
+				A43C0C0A1AE2A407006EEC33 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +147,9 @@
 				A4E040FD1AE249CD00FC634E /* BikingTogether */,
 				A4E041171AE249CD00FC634E /* BikingTogetherTests */,
 				A4E040FC1AE249CD00FC634E /* Products */,
+				A43C0C051AE2A407006EEC33 /* FBSDKCoreKit.framework */,
+				A43C0C061AE2A407006EEC33 /* FBSDKLoginKit.framework */,
+				A43C0C071AE2A407006EEC33 /* FBSDKShareKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -431,8 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tyxqiean/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = BikingTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,8 +458,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tyxqiean/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = BikingTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
