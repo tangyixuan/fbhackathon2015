@@ -9,8 +9,13 @@
 #import "ViewController.h"
 
 #import "NewEventVC.h"
+#import "Event.h"
 #import "EventVC.h"
 
+
 @interface PlanListVC : ViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
