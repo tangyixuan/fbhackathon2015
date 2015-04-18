@@ -10,6 +10,7 @@
 
 @interface PlanListVC ()
 -(void)addTapped;
+-(void)startTapped;
 
 @end
 
@@ -20,9 +21,24 @@
     // Do any additional setup after loading the view.
     [self.navigationItem setTitle:@"Plan List"];
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addTapped)];
-    self.navigationItem.rightBarButtonItem = addButton;
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addTapped)];
+//    self.navigationItem.rightBarButtonItem = addButton;
+//    
+//    
+//    
+    
+    UIBarButtonItem *startButton = [[UIBarButtonItem alloc]initWithTitle:@"start" style:UIBarButtonItemStylePlain target:self action:@selector(startTapped)];
+    self.navigationItem.rightBarButtonItem = startButton;
+    
+    
+    
+    
 
+}
+
+-(void)startTapped{
+    RidingMapVC *ridingMapVC = [[RidingMapVC alloc]init];
+    [self.navigationController pushViewController:ridingMapVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

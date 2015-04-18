@@ -276,7 +276,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yh0-ey-U6T">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                                 <connections>
@@ -286,14 +286,23 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="Yh0-ey-U6T" secondAttribute="height" id="pnq-NY-ew8"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Yh0-ey-U6T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="pnq-NY-ew8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Yh0-ey-U6T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="pnq-NY-ew8"/>
                             </mask>
                         </variation>
                     </view>

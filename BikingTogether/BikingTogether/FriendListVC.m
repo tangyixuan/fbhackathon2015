@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self getFriendList];
+    [self.tableView reloadData];
     
     [self.navigationItem setTitle:@"Friends"];
     
@@ -38,15 +39,45 @@
 }
 
 -(void)getFriendList{
-    NSArray *names = [[NSArray alloc]initWithObjects:@"Esther",@"Tom",@"Emma",@"Johnathon",nil];
-    NSArray *imageNames = [[NSArray alloc]initWithObjects:@"image1",@"image2",@"image3",@"image4",nil];
+    if (!self.friendList) {
+        self.friendList = [[NSMutableArray alloc]init];
+    }
+    NSArray *names = [[NSArray alloc]initWithObjects:@"Lizzy",@"James",@"Doris",@"Esther",nil];
+    NSArray *imageNames = [[NSArray alloc]initWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",nil];
     
     for (int i=0;i<[names count];i++){
         NSString *name = [names objectAtIndex:(NSInteger)i];
         UIImage *image = [UIImage imageNamed:[imageNames objectAtIndex:(NSInteger)i]];
         UserInfor *user = [[UserInfor alloc]initWithNmae:name andImage:image];
         [self.friendList addObject:user];
+
     }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.friendList count];
+}
+
+// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"in");
+    static NSString *friendCellIdentifier = @"fiendCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:friendCellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:friendCellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    UserInfor *friend = [self.friendList objectAtIndex:indexPath.row];
+   
+    [cell.textLabel setText:friend.name];
+    NSLog(@"%@",cell.textLabel.text);
+    [cell.imageView setImage:friend.image];
+    
+    return cell;
 }
 /*
 #pragma mark - Navigation
