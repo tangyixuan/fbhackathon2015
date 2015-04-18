@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "StatisticVC.h"
 
 @interface RidingMapVC : ViewController
 

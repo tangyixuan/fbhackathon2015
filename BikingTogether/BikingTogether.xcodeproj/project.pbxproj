@@ -11,10 +11,11 @@
 		A476D89A1AE2547200623126 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8991AE2547200623126 /* PlanListVC.m */; };
 		A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89C1AE2548C00623126 /* HistoryVC.m */; };
 		A476D8A01AE254A400623126 /* FriendListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89F1AE254A400623126 /* FriendListVC.m */; };
-		A476D8A31AE254BD00623126 /* FriendsForEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8A21AE254BD00623126 /* FriendsForEventViewController.m */; };
 		A476D8A81AE2550600623126 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8A71AE2550600623126 /* EventVC.m */; };
 		A476D8AB1AE2551F00623126 /* RidingMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8AA1AE2551F00623126 /* RidingMapVC.m */; };
 		A476D8AE1AE2553900623126 /* StatisticVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8AD1AE2553900623126 /* StatisticVC.m */; };
+		A476D8B51AE26E8900623126 /* NewEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8B41AE26E8900623126 /* NewEventVC.m */; };
+		A476D8B81AE26EED00623126 /* FriendForEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8B71AE26EED00623126 /* FriendForEventVC.m */; };
 		A4E041011AE249CD00FC634E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E041001AE249CD00FC634E /* main.m */; };
 		A4E041041AE249CD00FC634E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E041031AE249CD00FC634E /* AppDelegate.m */; };
 		A4E041071AE249CD00FC634E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E041061AE249CD00FC634E /* ViewController.m */; };
@@ -43,14 +44,16 @@
 		A476D89C1AE2548C00623126 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
 		A476D89E1AE254A400623126 /* FriendListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListVC.h; sourceTree = "<group>"; };
 		A476D89F1AE254A400623126 /* FriendListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListVC.m; sourceTree = "<group>"; };
-		A476D8A11AE254BD00623126 /* FriendsForEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsForEventViewController.h; sourceTree = "<group>"; };
-		A476D8A21AE254BD00623126 /* FriendsForEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsForEventViewController.m; sourceTree = "<group>"; };
 		A476D8A61AE2550600623126 /* EventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
 		A476D8A71AE2550600623126 /* EventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
 		A476D8A91AE2551F00623126 /* RidingMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RidingMapVC.h; sourceTree = "<group>"; };
 		A476D8AA1AE2551F00623126 /* RidingMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RidingMapVC.m; sourceTree = "<group>"; };
 		A476D8AC1AE2553900623126 /* StatisticVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticVC.h; sourceTree = "<group>"; };
 		A476D8AD1AE2553900623126 /* StatisticVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticVC.m; sourceTree = "<group>"; };
+		A476D8B31AE26E8900623126 /* NewEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventVC.h; sourceTree = "<group>"; };
+		A476D8B41AE26E8900623126 /* NewEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventVC.m; sourceTree = "<group>"; };
+		A476D8B61AE26EED00623126 /* FriendForEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendForEventVC.h; sourceTree = "<group>"; };
+		A476D8B71AE26EED00623126 /* FriendForEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendForEventVC.m; sourceTree = "<group>"; };
 		A4E040FB1AE249CD00FC634E /* BikingTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikingTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E040FF1AE249CD00FC634E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E041001AE249CD00FC634E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,10 +105,12 @@
 		A476D8AF1AE2554200623126 /* 2nd level VCs */ = {
 			isa = PBXGroup;
 			children = (
-				A476D8A11AE254BD00623126 /* FriendsForEventViewController.h */,
-				A476D8A21AE254BD00623126 /* FriendsForEventViewController.m */,
+				A476D8B31AE26E8900623126 /* NewEventVC.h */,
+				A476D8B41AE26E8900623126 /* NewEventVC.m */,
 				A476D8A61AE2550600623126 /* EventVC.h */,
 				A476D8A71AE2550600623126 /* EventVC.m */,
+				A476D8B61AE26EED00623126 /* FriendForEventVC.h */,
+				A476D8B71AE26EED00623126 /* FriendForEventVC.m */,
 				A476D8A91AE2551F00623126 /* RidingMapVC.h */,
 				A476D8AA1AE2551F00623126 /* RidingMapVC.m */,
 				A476D8AC1AE2553900623126 /* StatisticVC.h */,
@@ -282,8 +287,9 @@
 				A476D8A81AE2550600623126 /* EventVC.m in Sources */,
 				A476D8A01AE254A400623126 /* FriendListVC.m in Sources */,
 				A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */,
+				A476D8B81AE26EED00623126 /* FriendForEventVC.m in Sources */,
 				A476D8AB1AE2551F00623126 /* RidingMapVC.m in Sources */,
-				A476D8A31AE254BD00623126 /* FriendsForEventViewController.m in Sources */,
+				A476D8B51AE26E8900623126 /* NewEventVC.m in Sources */,
 				A4E041041AE249CD00FC634E /* AppDelegate.m in Sources */,
 				A4E041011AE249CD00FC634E /* main.m in Sources */,
 			);

@@ -9,7 +9,7 @@
 #import "RidingMapVC.h"
 
 @interface RidingMapVC ()
-
+-(void)endTapped;
 @end
 
 @implementation RidingMapVC
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIBarButtonItem *endButton = [[UIBarButtonItem alloc]initWithTitle:@"end" style:UIBarButtonItemStylePlain target:self action:@selector(endTapped)];
+    self.navigationItem.rightBarButtonItem = endButton;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +28,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)endTapped{
+    StatisticVC *statisticVC = [[StatisticVC alloc]init];
+    [self.navigationController pushViewController:statisticVC animated:YES];
+}
 /*
 #pragma mark - Navigation
 

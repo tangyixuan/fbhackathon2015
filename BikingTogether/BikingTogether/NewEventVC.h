@@ -1,5 +1,5 @@
 //
-//  FriendsForEventViewController.h
+//  NewEventVC.h
 //  BikingTogether
 //
 //  Created by tangyixuan on 18/4/15.
@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface FriendsForEventViewController : ViewController
+@interface NewEventVC : ViewController
 
 @end

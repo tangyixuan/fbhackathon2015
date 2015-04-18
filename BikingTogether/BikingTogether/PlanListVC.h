@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
-@interface PlanListVC : ViewController
+#import "NewEventVC.h"
+#import "EventVC.h"
+
+@interface PlanListVC : ViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

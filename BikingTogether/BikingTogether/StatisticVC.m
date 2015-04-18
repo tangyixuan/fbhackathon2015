@@ -9,6 +9,7 @@
 #import "StatisticVC.h"
 
 @interface StatisticVC ()
+-(void)doneTapped;
 
 @end
 
@@ -17,11 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]initWithTitle:@"done" style:UIBarButtonItemStylePlain target:self action:@selector(doneTapped)];
+    self.navigationItem.rightBarButtonItem = doneButton;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)doneTapped{
+    
+    
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 /*

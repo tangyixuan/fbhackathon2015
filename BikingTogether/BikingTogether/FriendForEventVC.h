@@ -1,5 +1,5 @@
 //
-//  EventVC.h
+//  FriendForEventVC.h
 //  BikingTogether
 //
 //  Created by tangyixuan on 18/4/15.
@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "RidingMapVC.h"
-#import "FriendForEventVC.h"
 
-@interface EventVC : ViewController
-
--(id)initWithEvent;
+@interface FriendForEventVC : ViewController
 
 @end

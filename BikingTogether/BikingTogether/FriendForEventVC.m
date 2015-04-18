@@ -1,18 +1,18 @@
 //
-//  FriendsForEventViewController.m
+//  FriendForEventVC.m
 //  BikingTogether
 //
 //  Created by tangyixuan on 18/4/15.
 //  Copyright (c) 2015 Hackathon. All rights reserved.
 //
 
-#import "FriendsForEventViewController.h"
+#import "FriendForEventVC.h"
 
-@interface FriendsForEventViewController ()
+@interface FriendForEventVC ()
 
 @end
 
-@implementation FriendsForEventViewController
+@implementation FriendForEventVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
