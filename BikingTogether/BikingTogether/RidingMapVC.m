@@ -50,36 +50,36 @@
     
     tempSize = CGSizeMake(screenWidth*3/10, 20);
     tempLabel = [[UILabel alloc] init];
-//    [tempLabel setBackgroundColor:[UIColor blueColor]];
     [tempLabel setText:@"Angle"];
-    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)/4, screenHeight * 7.5/ 10, tempSize.width, tempSize.height)];
+    [tempLabel setTextAlignment:NSTextAlignmentCenter];
+    [tempLabel setFont:[UIFont italicSystemFontOfSize:14]];
+    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)/4, screenHeight * 7.75/ 10, tempSize.width, tempSize.height)];
     [self.view addSubview:tempLabel];
 
     
     tempSize = CGSizeMake(screenWidth*3/10, 40);
     labelAngle = [[UILabel alloc] init];
-//    [labelAngle setBackgroundColor:[UIColor redColor]];
     [labelAngle setText:@"-"];
-//    [labelAngle setTextAlignment:NSTextAlignmentCenter];
-    [labelAngle setFont:[UIFont boldSystemFontOfSize:30]];
-    [labelAngle setFrame:CGRectMake((screenWidth-tempSize.width)/4, screenHeight * 8 / 10, tempSize.width, tempSize.height)];
+    [labelAngle setTextAlignment:NSTextAlignmentCenter];
+    [labelAngle setFont:[UIFont boldSystemFontOfSize:34]];
+    [labelAngle setFrame:CGRectMake((screenWidth-tempSize.width)/4, screenHeight * 8.05 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:labelAngle];
     
     tempSize = CGSizeMake(screenWidth*3/10, 20);
     tempLabel = [[UILabel alloc] init];
-//    [tempLabel setBackgroundColor:[UIColor blueColor]];
     [tempLabel setText:@"Speed"];
-    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*3/4, screenHeight * 7.5 / 10, tempSize.width, tempSize.height)];
+    [tempLabel setTextAlignment:NSTextAlignmentCenter];
+    [tempLabel setFont:[UIFont italicSystemFontOfSize:14]];
+    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*3/4, screenHeight * 7.75 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:tempLabel];
     
     
     tempSize = CGSizeMake(screenWidth*3/10, 40);
     labelSpeed = [[UILabel alloc] init];
-//    [labelSpeed setBackgroundColor:[UIColor redColor]];
     [labelSpeed setText:@"-"];
-//    [labelSpeed setTextAlignment:NSTextAlignmentCenter];
-    [labelSpeed setFont:[UIFont boldSystemFontOfSize:30]];
-    [labelSpeed setFrame:CGRectMake((screenWidth-tempSize.width)*3/4, screenHeight * 8 / 10, tempSize.width, tempSize.height)];
+    [labelSpeed setTextAlignment:NSTextAlignmentCenter];
+    [labelSpeed setFont:[UIFont boldSystemFontOfSize:34]];
+    [labelSpeed setFrame:CGRectMake((screenWidth-tempSize.width)*3/4, screenHeight * 8.05 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:labelSpeed];
     
 }
@@ -98,7 +98,7 @@
     
     CGSize tempSize = CGSizeMake(screenWidth*9/10, screenHeight*6/10);
     objectMap = [[ObjectMap alloc] init];
-    [objectMap setup:CGRectMake((screenWidth - tempSize.width)/2, screenHeight/10, tempSize.width, tempSize.height)];
+    [objectMap setup:CGRectMake((screenWidth - tempSize.width)/2, screenHeight*12/100, tempSize.width, tempSize.height)];
     [self.view addSubview:[objectMap getMapView]];
     
     [objectMap addGpsCoordinateWithLongitude:[[SingletonGPS sharedInstance]getLongitude] latitude:[[SingletonGPS sharedInstance]getLatitude] accelX:-1 accelY:-1];

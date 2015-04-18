@@ -37,53 +37,53 @@
     
     tempSize = CGSizeMake(screenWidth*25/100, 20);
     tempLabel = [[UILabel alloc] init];
-//    [tempLabel setBackgroundColor:[UIColor blueColor]];
     [tempLabel setText:@"Distance"];
-    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*10/100, screenHeight * 7.5/ 10, tempSize.width, tempSize.height)];
+    [tempLabel setFont:[UIFont italicSystemFontOfSize:14]];
+    [tempLabel setTextAlignment:NSTextAlignmentCenter];
+    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*8/100, screenHeight * 7.75/ 10, tempSize.width, tempSize.height)];
     [self.view addSubview:tempLabel];
     
     
     tempSize = CGSizeMake(screenWidth*25/100, 40);
     labelTotalDistance = [[UILabel alloc] init];
-//    [labelTotalDistance setBackgroundColor:[UIColor redColor]];
     [labelTotalDistance setText:@"-"];
-//    [labelTotalDistance setTextAlignment:NSTextAlignmentCenter];
-    [labelTotalDistance setFont:[UIFont boldSystemFontOfSize:25]];
-    [labelTotalDistance setFrame:CGRectMake((screenWidth-tempSize.width)*10/100, screenHeight * 8 / 10, tempSize.width, tempSize.height)];
+    [labelTotalDistance setTextAlignment:NSTextAlignmentCenter];
+    [labelTotalDistance setFont:[UIFont boldSystemFontOfSize:30]];
+    [labelTotalDistance setFrame:CGRectMake((screenWidth-tempSize.width)*8/100, screenHeight * 8.05 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:labelTotalDistance];
     
     tempSize = CGSizeMake(screenWidth*25/100, 20);
     tempLabel = [[UILabel alloc] init];
-//    [tempLabel setBackgroundColor:[UIColor blueColor]];
     [tempLabel setText:@"Total Time"];
-    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*50/100, screenHeight * 7.5 / 10, tempSize.width, tempSize.height)];
+    [tempLabel setFont:[UIFont italicSystemFontOfSize:14]];
+    [tempLabel setTextAlignment:NSTextAlignmentCenter];
+    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*50/100, screenHeight * 7.75 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:tempLabel];
     
     
     tempSize = CGSizeMake(screenWidth*25/100, 40);
     labelTotalTime = [[UILabel alloc] init];
-//    [labelAverageIncline setBackgroundColor:[UIColor redColor]];
     [labelTotalTime setText:@"-"];
-//    [labelAverageIncline setTextAlignment:NSTextAlignmentCenter];
-    [labelTotalTime setFont:[UIFont boldSystemFontOfSize:25]];
-    [labelTotalTime setFrame:CGRectMake((screenWidth-tempSize.width)*50/100, screenHeight * 8 / 10, tempSize.width, tempSize.height)];
+    [labelTotalTime setTextAlignment:NSTextAlignmentCenter];
+    [labelTotalTime setFont:[UIFont boldSystemFontOfSize:30]];
+    [labelTotalTime setFrame:CGRectMake((screenWidth-tempSize.width)*50/100, screenHeight * 8.05 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:labelTotalTime];
     
     tempSize = CGSizeMake(screenWidth*25/100, 20);
     tempLabel = [[UILabel alloc] init];
-    //    [tempLabel setBackgroundColor:[UIColor blueColor]];
     [tempLabel setText:@"Av. Incline"];
-    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*90/100, screenHeight * 7.5 / 10, tempSize.width, tempSize.height)];
+    [tempLabel setFont:[UIFont italicSystemFontOfSize:14]];
+    [tempLabel setTextAlignment:NSTextAlignmentCenter];
+    [tempLabel setFrame:CGRectMake((screenWidth-tempSize.width)*92/100, screenHeight * 7.75 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:tempLabel];
     
     
     tempSize = CGSizeMake(screenWidth*25/100, 40);
     labelAverageIncline = [[UILabel alloc] init];
-    //    [labelAverageIncline setBackgroundColor:[UIColor redColor]];
     [labelAverageIncline setText:@"-"];
-    //    [labelAverageIncline setTextAlignment:NSTextAlignmentCenter];
-    [labelAverageIncline setFont:[UIFont boldSystemFontOfSize:25]];
-    [labelAverageIncline setFrame:CGRectMake((screenWidth-tempSize.width)*90/100, screenHeight * 8 / 10, tempSize.width, tempSize.height)];
+    [labelAverageIncline setTextAlignment:NSTextAlignmentCenter];
+    [labelAverageIncline setFont:[UIFont boldSystemFontOfSize:30]];
+    [labelAverageIncline setFrame:CGRectMake((screenWidth-tempSize.width)*92/100, screenHeight * 8.05 / 10, tempSize.width, tempSize.height)];
     [self.view addSubview:labelAverageIncline];
 
     
@@ -100,7 +100,6 @@
     [labelTotalDistance setText:[NSString stringWithFormat:@"%.2f", [objectMap getTotalDistance]]];
     [labelTotalTime setText:[NSString stringWithFormat:@"%.2f", [objectMap getTotalTime]]];
     [labelAverageIncline setText:[NSString stringWithFormat:@"%.1f", [objectMap getAverageIncline]]];
-    
     
     
 }

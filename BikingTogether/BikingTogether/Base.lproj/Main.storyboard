@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -248,7 +248,7 @@
         <scene sceneID="Asn-B7-zgg">
             <objects>
                 <navigationController id="Zj2-63-r5z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friend List" id="alC-2v-6PT"/>
+                    <tabBarItem key="tabBarItem" title="Friend List" image="friends.png" id="alC-2v-6PT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FKA-dl-Bli">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -480,7 +480,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="9gX-ur-SwA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile.png" id="9gX-ur-SwA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBZ-le-mmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,7 +490,7 @@
         <scene sceneID="nh1-kr-52g">
             <objects>
                 <navigationController id="ChF-Ge-gOS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="6bE-mi-Hnk"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history.png" id="6bE-mi-Hnk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iv0-DA-zJb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -507,7 +507,7 @@
         <scene sceneID="5RO-rf-yzE">
             <objects>
                 <navigationController id="5nP-8R-kkT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Plan List" id="FVY-3j-PmX"/>
+                    <tabBarItem key="tabBarItem" title="Plan List" image="planlist.png" id="FVY-3j-PmX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y6e-0l-ZJL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -544,5 +544,9 @@
     </scenes>
     <resources>
         <image name="circle" width="225" height="225"/>
+        <image name="friends.png" width="48" height="32"/>
+        <image name="history.png" width="48" height="32"/>
+        <image name="planlist.png" width="48" height="32"/>
+        <image name="profile.png" width="48" height="32"/>
     </resources>
 </document>
