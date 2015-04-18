@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +24,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-ah-HGy">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-ah-HGy">
                                 <rect key="frame" x="340" y="300" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Login with Facebook">
@@ -53,9 +54,6 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="92" y="56" width="217" height="56"/>
-                                </variation>
                             </label>
                         </subviews>
                         <constraints>
@@ -76,15 +74,15 @@
                                 <exclude reference="NHf-gA-nS3"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PSI-sa-JLZ"/>
-                                <exclude reference="TBQ-oF-ATJ"/>
                                 <exclude reference="dsV-0s-7RB"/>
                                 <exclude reference="uU9-yM-wWG"/>
+                                <exclude reference="cxF-YI-tka"/>
+                                <exclude reference="f4g-P0-Uez"/>
+                                <exclude reference="PSI-sa-JLZ"/>
+                                <exclude reference="TBQ-oF-ATJ"/>
                                 <exclude reference="gR1-VS-wsa"/>
                                 <exclude reference="TeS-ng-Sob"/>
                                 <exclude reference="Wlm-d6-MUR"/>
-                                <exclude reference="cxF-YI-tka"/>
-                                <exclude reference="f4g-P0-Uez"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -94,15 +92,15 @@
                                 <include reference="NHf-gA-nS3"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PSI-sa-JLZ"/>
-                                <include reference="TBQ-oF-ATJ"/>
                                 <include reference="dsV-0s-7RB"/>
                                 <include reference="uU9-yM-wWG"/>
+                                <include reference="cxF-YI-tka"/>
+                                <include reference="f4g-P0-Uez"/>
+                                <include reference="PSI-sa-JLZ"/>
+                                <include reference="TBQ-oF-ATJ"/>
                                 <include reference="gR1-VS-wsa"/>
                                 <include reference="TeS-ng-Sob"/>
                                 <include reference="Wlm-d6-MUR"/>
-                                <include reference="cxF-YI-tka"/>
-                                <include reference="f4g-P0-Uez"/>
                             </mask>
                         </variation>
                     </view>
@@ -123,6 +121,7 @@
                         <viewControllerLayoutGuide type="bottom" id="GZw-Q5-dba"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eYn-sw-LAy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nUp-eM-lpf">
@@ -164,6 +163,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Yyx-Is-95d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="is5-wv-XPV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -181,6 +181,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FlX-qB-J59"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aJt-2f-rsz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -198,6 +199,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zbM-bg-tiw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LO3-2o-Y81">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -215,6 +217,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7ey-kG-tqG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wIa-Pa-fCW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -327,6 +330,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fC-hg-pg2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8gl-x9-DT8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
