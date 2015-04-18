@@ -7,7 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "ObjectMap.h"
 
-@interface StatisticVC : ViewController
+@interface StatisticVC : ViewController {
+    int screenWidth;
+    int screenHeight;
+    ObjectMap *objectMap;
+    
+    UILabel *labelTotalDistance;
+    UILabel *labelTotalTime;
+    UILabel *labelAverageIncline;
+}
+
+- (void) setObjectMap:(ObjectMap*)anObjectMap;
 
 @end

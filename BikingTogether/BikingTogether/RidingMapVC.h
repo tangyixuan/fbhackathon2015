@@ -9,6 +9,20 @@
 #import "ViewController.h"
 #import "StatisticVC.h"
 
-@interface RidingMapVC : ViewController
+#import "GlobalResources.h"
+#import "ObjectMap.h"
+
+@interface RidingMapVC : ViewController <SingletonGPSProtocol> {
+    ObjectMap *objectMap;
+    int screenWidth;
+    int screenHeight;
+    
+    
+    UILabel *labelAngle;
+    UILabel *labelSpeed;
+
+    NSTimer *timer;
+    NSRunLoop *runLoop;
+}
 
 @end

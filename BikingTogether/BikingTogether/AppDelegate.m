@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "GlobalResources.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,8 @@
 @implementation AppDelegate
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[SingletonGPS sharedInstance] startUpdatingLocation];      // start up gps
+    [SingletonAccelerator sharedInstance];
     [FBSDKAppEvents activateApp];
 }
 

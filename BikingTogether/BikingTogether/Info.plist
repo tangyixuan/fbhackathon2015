@@ -29,6 +29,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSRequiresIPhoneOS - 2</key>
+	<true/>
 	<key>FacebookAppID</key>
 	<string>1606093366273543</string>
 	<key>FacebookDisplayName</key>
@@ -49,5 +51,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This will be used to obtain or track your location.</string>
 </dict>
 </plist>
