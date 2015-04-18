@@ -30,6 +30,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(id)initWithEvent{
+    return nil;
+    
+}
+
 -(void)startTapped{
     RidingMapVC *ridingMapVC = [[RidingMapVC alloc]init];
     [self.navigationController pushViewController:ridingMapVC animated:YES];
