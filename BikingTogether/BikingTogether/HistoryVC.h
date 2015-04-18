@@ -8,6 +8,11 @@
 
 #import "ViewController.h"
 
-@interface HistoryVC : ViewController
+@interface HistoryVC : ViewController<UITableViewDataSource,UITableViewDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
 
 @end

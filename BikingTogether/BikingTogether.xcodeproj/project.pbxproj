@@ -13,9 +13,6 @@
 		7D5D1ADB1AE2CA060051EEF6 /* YS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5D1AD91AE2CA060051EEF6 /* YS.png */; };
 		7D5D1ADE1AE2CCF30051EEF6 /* walk_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D5D1ADC1AE2CCF30051EEF6 /* walk_3.txt */; };
 		7D5D1ADF1AE2CCF30051EEF6 /* walk_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D5D1ADD1AE2CCF30051EEF6 /* walk_5.txt */; };
-		7DEA24451AE2C4CF001EB476 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA24421AE2C4CF001EB476 /* FBSDKCoreKit.framework */; };
-		7DEA24461AE2C4CF001EB476 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA24431AE2C4CF001EB476 /* FBSDKLoginKit.framework */; };
-		7DEA24471AE2C4CF001EB476 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA24441AE2C4CF001EB476 /* FBSDKShareKit.framework */; };
 		7DEA24571AE2C82B001EB476 /* SingletonAccelerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244A1AE2C82B001EB476 /* SingletonAccelerator.m */; };
 		7DEA24581AE2C82B001EB476 /* SingletonGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244C1AE2C82B001EB476 /* SingletonGPS.m */; };
 		7DEA24591AE2C82B001EB476 /* GlobalResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244E1AE2C82B001EB476 /* GlobalResources.m */; };
@@ -28,6 +25,11 @@
 		A43C0C131AE2BB60006EEC33 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C0F1AE2BB60006EEC33 /* image4.jpg */; };
 		A43C0C141AE2BB60006EEC33 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C101AE2BB60006EEC33 /* image2.jpg */; };
 		A43C0C151AE2BB60006EEC33 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C111AE2BB60006EEC33 /* image1.jpg */; };
+		A43C0C191AE2FCAD006EEC33 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C161AE2FCAD006EEC33 /* FBSDKCoreKit.framework */; };
+		A43C0C1A1AE2FCAD006EEC33 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C171AE2FCAD006EEC33 /* FBSDKLoginKit.framework */; };
+		A43C0C1B1AE2FCAD006EEC33 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C181AE2FCAD006EEC33 /* FBSDKShareKit.framework */; };
+		A43C0C1E1AE2FF9C006EEC33 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A43C0C1D1AE2FF9C006EEC33 /* Event.m */; };
+		A43C0C211AE318ED006EEC33 /* group.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C201AE318ED006EEC33 /* group.PNG */; };
 		A476D8971AE2545100623126 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8961AE2545100623126 /* ProfileVC.m */; };
 		A476D89A1AE2547200623126 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8991AE2547200623126 /* PlanListVC.m */; };
 		A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89C1AE2548C00623126 /* HistoryVC.m */; };
@@ -66,9 +68,6 @@
 		7D5D1AD91AE2CA060051EEF6 /* YS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YS.png; sourceTree = "<group>"; };
 		7D5D1ADC1AE2CCF30051EEF6 /* walk_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = walk_3.txt; sourceTree = "<group>"; };
 		7D5D1ADD1AE2CCF30051EEF6 /* walk_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = walk_5.txt; sourceTree = "<group>"; };
-		7DEA24421AE2C4CF001EB476 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		7DEA24431AE2C4CF001EB476 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		7DEA24441AE2C4CF001EB476 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7DEA24491AE2C82B001EB476 /* SingletonAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonAccelerator.h; sourceTree = "<group>"; };
 		7DEA244A1AE2C82B001EB476 /* SingletonAccelerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonAccelerator.m; sourceTree = "<group>"; };
 		7DEA244B1AE2C82B001EB476 /* SingletonGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonGPS.h; sourceTree = "<group>"; };
@@ -89,6 +88,12 @@
 		A43C0C0F1AE2BB60006EEC33 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 		A43C0C101AE2BB60006EEC33 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		A43C0C111AE2BB60006EEC33 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		A43C0C161AE2FCAD006EEC33 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A43C0C171AE2FCAD006EEC33 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A43C0C181AE2FCAD006EEC33 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A43C0C1C1AE2FF9C006EEC33 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
+		A43C0C1D1AE2FF9C006EEC33 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
+		A43C0C201AE318ED006EEC33 /* group.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.PNG; sourceTree = "<group>"; };
 		A476D8951AE2545100623126 /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		A476D8961AE2545100623126 /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		A476D8981AE2547200623126 /* PlanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanListVC.h; sourceTree = "<group>"; };
@@ -130,9 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DEA24461AE2C4CF001EB476 /* FBSDKLoginKit.framework in Frameworks */,
-				7DEA24451AE2C4CF001EB476 /* FBSDKCoreKit.framework in Frameworks */,
-				7DEA24471AE2C4CF001EB476 /* FBSDKShareKit.framework in Frameworks */,
+				A43C0C191AE2FCAD006EEC33 /* FBSDKCoreKit.framework in Frameworks */,
+				A43C0C1B1AE2FCAD006EEC33 /* FBSDKShareKit.framework in Frameworks */,
+				A43C0C1A1AE2FCAD006EEC33 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,17 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		A43C0C1F1AE2FFA5006EEC33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A43C0C0B1AE2B434006EEC33 /* UserInfor.h */,
+				A43C0C0C1AE2B434006EEC33 /* UserInfor.m */,
+				A43C0C1C1AE2FF9C006EEC33 /* Event.h */,
+				A43C0C1D1AE2FF9C006EEC33 /* Event.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A476D8A51AE254E900623126 /* tabVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +238,7 @@
 		A476D8C91AE284F200623126 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A43C0C201AE318ED006EEC33 /* group.PNG */,
 				A43C0C0E1AE2BB60006EEC33 /* image3.jpg */,
 				A43C0C0F1AE2BB60006EEC33 /* image4.jpg */,
 				A43C0C101AE2BB60006EEC33 /* image2.jpg */,
@@ -240,9 +257,9 @@
 				A4E040FD1AE249CD00FC634E /* BikingTogether */,
 				A4E041171AE249CD00FC634E /* BikingTogetherTests */,
 				A4E040FC1AE249CD00FC634E /* Products */,
-				7DEA24421AE2C4CF001EB476 /* FBSDKCoreKit.framework */,
-				7DEA24431AE2C4CF001EB476 /* FBSDKLoginKit.framework */,
-				7DEA24441AE2C4CF001EB476 /* FBSDKShareKit.framework */,
+				A43C0C161AE2FCAD006EEC33 /* FBSDKCoreKit.framework */,
+				A43C0C171AE2FCAD006EEC33 /* FBSDKLoginKit.framework */,
+				A43C0C181AE2FCAD006EEC33 /* FBSDKShareKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,8 +275,7 @@
 		A4E040FD1AE249CD00FC634E /* BikingTogether */ = {
 			isa = PBXGroup;
 			children = (
-				A43C0C0B1AE2B434006EEC33 /* UserInfor.h */,
-				A43C0C0C1AE2B434006EEC33 /* UserInfor.m */,
+				A43C0C1F1AE2FFA5006EEC33 /* Model */,
 				A4E041021AE249CD00FC634E /* AppDelegate.h */,
 				A4E041031AE249CD00FC634E /* AppDelegate.m */,
 				A4E041081AE249CD00FC634E /* Main.storyboard */,
@@ -385,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5D1ADA1AE2CA060051EEF6 /* JW.png in Resources */,
+				A43C0C211AE318ED006EEC33 /* group.PNG in Resources */,
 				7D5D1ADF1AE2CCF30051EEF6 /* walk_5.txt in Resources */,
 				7D5D1ADB1AE2CA060051EEF6 /* YS.png in Resources */,
 				A4E0410A1AE249CD00FC634E /* Main.storyboard in Resources */,
@@ -423,6 +440,7 @@
 				A476D89A1AE2547200623126 /* PlanListVC.m in Sources */,
 				A476D8971AE2545100623126 /* ProfileVC.m in Sources */,
 				A4E041071AE249CD00FC634E /* ViewController.m in Sources */,
+				A43C0C1E1AE2FF9C006EEC33 /* Event.m in Sources */,
 				7DEA24581AE2C82B001EB476 /* SingletonGPS.m in Sources */,
 				7DEA245B1AE2C82B001EB476 /* ObjectMapRouteView.m in Sources */,
 				A476D8C01AE2829C00623126 /* TabVC.m in Sources */,

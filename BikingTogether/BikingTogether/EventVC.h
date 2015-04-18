@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "RidingMapVC.h"
 #import "FriendForEventVC.h"
+#import "Event.h"
+#import "UserInfor.h"
+@interface EventVC : ViewController<UITableViewDataSource, UITableViewDelegate>
 
-@interface EventVC : ViewController
+@property (nonatomic) Event *event;
 
--(id)initWithEvent;
 
 @end

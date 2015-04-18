@@ -9,37 +9,31 @@
 #import "PlanListVC.h"
 
 @interface PlanListVC ()
+
+@property(nonatomic) NSMutableArray *planList;
+
 -(void)addTapped;
--(void)startTapped;
+-(void)updatePlanList;
 
 @end
 
 @implementation PlanListVC
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear: animated];
+    [self updatePlanList];
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.navigationItem setTitle:@"Plan List"];
     
-//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addTapped)];
-//    self.navigationItem.rightBarButtonItem = addButton;
-//    
-//    
-//    
-    
-    UIBarButtonItem *startButton = [[UIBarButtonItem alloc]initWithTitle:@"start" style:UIBarButtonItemStylePlain target:self action:@selector(startTapped)];
-    self.navigationItem.rightBarButtonItem = startButton;
-    
-    
-    
-    
-
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(addTapped)];
+    self.navigationItem.rightBarButtonItem = addButton;
 }
 
--(void)startTapped{
-    RidingMapVC *ridingMapVC = [[RidingMapVC alloc]init];
-    [self.navigationController pushViewController:ridingMapVC animated:YES];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,24 +46,44 @@
 
 }
 
+-(void)updatePlanList{
+    //need to change this mathod later
+    //will read plans from the server
+    if (!self.planList){
+        Event *event1 = [[Event alloc]initWithEventID:@"1darling"];
+        Event *event2 = [[Event alloc]initWithEventID:@"2UNSW"];
+        
+        self.planList = [[NSMutableArray alloc]initWithObjects:event1,event2, nil];
+    }
+}
+
 #pragma mark - tableview datasource and delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    NSLog(@"plans:  %d",(int)[self.planList count]);
+    return [self.planList count];
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    NSString *identifier = @"planListCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if(!cell){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        Event *event = (Event *)[self.planList objectAtIndex:indexPath.row];
+        [cell.textLabel setText:event.des];
+    }
+    
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    EventVC *eventVC = [[EventVC alloc]initWithEvent];
+    EventVC *eventVC = [[EventVC alloc]init];
+    eventVC.event = [self.planList objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:eventVC animated:YES];
-    
 }
 
 

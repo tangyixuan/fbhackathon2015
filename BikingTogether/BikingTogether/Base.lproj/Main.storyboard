@@ -128,6 +128,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="pjm-Ie-IN1"/>
+                    <connections>
+                        <outlet property="tableView" destination="nUp-eM-lpf" id="4vc-Dm-x3j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDS-6D-kYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,9 +226,13 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="35J-LI-j2n" id="oAu-vb-Pby"/>
+                                    <outlet property="delegate" destination="35J-LI-j2n" id="Ssj-k2-Qb9"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xmf-FV-rdH"/>
@@ -239,6 +246,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="History" id="ZKh-ro-Kps"/>
                     <navigationItem key="navigationItem" id="Kqb-3n-chA"/>
+                    <connections>
+                        <outlet property="tableView" destination="xmf-FV-rdH" id="fKM-WD-axk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBW-hD-vWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

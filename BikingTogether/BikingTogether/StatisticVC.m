@@ -115,6 +115,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+      [self.navigationItem setHidesBackButton:YES];
      [self.navigationItem setTitle:@"Statistics"];
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]initWithTitle:@"done" style:UIBarButtonItemStylePlain target:self action:@selector(doneTapped)];
     self.navigationItem.rightBarButtonItem = doneButton;

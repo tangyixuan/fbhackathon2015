@@ -157,6 +157,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   [self.navigationItem setHidesBackButton:YES];
     [self.navigationItem setTitle:@"Map"];
     
     UIBarButtonItem *endButton = [[UIBarButtonItem alloc]initWithTitle:@"end" style:UIBarButtonItemStylePlain target:self action:@selector(endTapped)];
