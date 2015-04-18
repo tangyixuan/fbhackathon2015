@@ -13,5 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)loginTapped:(id)sender;
 
+- (IBAction)skipTapped:(id)sender;
+
+
 @end
 

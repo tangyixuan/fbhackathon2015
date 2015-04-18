@@ -57,5 +57,10 @@
     [self presentViewController:tabVC animated:YES completion:nil];
 }
 
+- (IBAction)skipTapped:(id)sender {
+    TabVC *tabVC = [self.storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    [self presentViewController:tabVC animated:YES completion:nil];
+}
+
 
 @end

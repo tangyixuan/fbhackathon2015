@@ -35,6 +35,18 @@
                                     <rect key="frame" x="100" y="419" width="200" height="40"/>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNC-5P-AQg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="532" width="31" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="skipTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eTs-da-8zF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="rGj-Xh-S7E" secondAttribute="width" id="PSI-sa-JLZ"/>
@@ -47,6 +59,7 @@
                                 <exclude reference="rGj-Xh-S7E"/>
                                 <exclude reference="NHf-gA-nS3"/>
                                 <exclude reference="mo8-fV-FuO"/>
+                                <exclude reference="kNC-5P-AQg"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="dsV-0s-7RB"/>
@@ -60,6 +73,7 @@
                                 <include reference="rGj-Xh-S7E"/>
                                 <include reference="NHf-gA-nS3"/>
                                 <include reference="mo8-fV-FuO"/>
+                                <include reference="kNC-5P-AQg"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="dsV-0s-7RB"/>
@@ -265,6 +279,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="CRB-iQ-XEK" id="zkN-eR-bfE"/>
+                                    <outlet property="delegate" destination="CRB-iQ-XEK" id="Gbu-Lu-6gw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,6 +299,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Friend List" id="o7l-zi-9Kb"/>
                     <navigationItem key="navigationItem" id="YIB-Y9-F0K"/>
+                    <connections>
+                        <outlet property="tableView" destination="Yh0-ey-U6T" id="JZD-na-Cu0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80R-mk-Fbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

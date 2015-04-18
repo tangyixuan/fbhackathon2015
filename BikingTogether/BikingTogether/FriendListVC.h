@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "UserInfor.h"
 
-@interface FriendListVC : ViewController
+@interface FriendListVC : ViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic) NSMutableArray *friendList;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

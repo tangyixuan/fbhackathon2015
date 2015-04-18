@@ -10,6 +10,7 @@
 		A43C0C081AE2A407006EEC33 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C051AE2A407006EEC33 /* FBSDKCoreKit.framework */; };
 		A43C0C091AE2A407006EEC33 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C061AE2A407006EEC33 /* FBSDKLoginKit.framework */; };
 		A43C0C0A1AE2A407006EEC33 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C0C071AE2A407006EEC33 /* FBSDKShareKit.framework */; };
+		A43C0C0D1AE2B434006EEC33 /* UserInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A43C0C0C1AE2B434006EEC33 /* UserInfor.m */; };
 		A476D8971AE2545100623126 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8961AE2545100623126 /* ProfileVC.m */; };
 		A476D89A1AE2547200623126 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8991AE2547200623126 /* PlanListVC.m */; };
 		A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89C1AE2548C00623126 /* HistoryVC.m */; };
@@ -44,6 +45,8 @@
 		A43C0C051AE2A407006EEC33 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A43C0C061AE2A407006EEC33 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A43C0C071AE2A407006EEC33 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A43C0C0B1AE2B434006EEC33 /* UserInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfor.h; sourceTree = "<group>"; };
+		A43C0C0C1AE2B434006EEC33 /* UserInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfor.m; sourceTree = "<group>"; };
 		A476D8951AE2545100623126 /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		A476D8961AE2545100623126 /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		A476D8981AE2547200623126 /* PlanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanListVC.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 		A4E040FD1AE249CD00FC634E /* BikingTogether */ = {
 			isa = PBXGroup;
 			children = (
+				A43C0C0B1AE2B434006EEC33 /* UserInfor.h */,
+				A43C0C0C1AE2B434006EEC33 /* UserInfor.m */,
 				A4E041021AE249CD00FC634E /* AppDelegate.h */,
 				A4E041031AE249CD00FC634E /* AppDelegate.m */,
 				A4E041081AE249CD00FC634E /* Main.storyboard */,
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A476D8AE1AE2553900623126 /* StatisticVC.m in Sources */,
+				A43C0C0D1AE2B434006EEC33 /* UserInfor.m in Sources */,
 				A476D89A1AE2547200623126 /* PlanListVC.m in Sources */,
 				A476D8971AE2545100623126 /* ProfileVC.m in Sources */,
 				A4E041071AE249CD00FC634E /* ViewController.m in Sources */,
