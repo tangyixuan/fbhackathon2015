@@ -30,7 +30,7 @@
     [self.tableview setDataSource:self];
     [self.view addSubview:self.tableview];
 
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"group.png"]];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"group2.png"]];
     [imageView setFrame:CGRectMake(0, 170, self.view.frame.size.width,370)];    [self.view addSubview:imageView];
     
 

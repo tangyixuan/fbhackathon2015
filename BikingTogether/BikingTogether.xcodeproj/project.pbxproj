@@ -24,6 +24,7 @@
 		7D5D1AFC1AE31DDD0051EEF6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5D1AF91AE31DDD0051EEF6 /* FBSDKCoreKit.framework */; };
 		7D5D1AFD1AE31DDD0051EEF6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5D1AFA1AE31DDD0051EEF6 /* FBSDKLoginKit.framework */; };
 		7D5D1AFE1AE31DDD0051EEF6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5D1AFB1AE31DDD0051EEF6 /* FBSDKShareKit.framework */; };
+		7D5D1B001AE31F3E0051EEF6 /* group2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5D1AFF1AE31F3E0051EEF6 /* group2.png */; };
 		7DEA24571AE2C82B001EB476 /* SingletonAccelerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244A1AE2C82B001EB476 /* SingletonAccelerator.m */; };
 		7DEA24581AE2C82B001EB476 /* SingletonGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244C1AE2C82B001EB476 /* SingletonGPS.m */; };
 		7DEA24591AE2C82B001EB476 /* GlobalResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA244E1AE2C82B001EB476 /* GlobalResources.m */; };
@@ -37,7 +38,6 @@
 		A43C0C141AE2BB60006EEC33 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C101AE2BB60006EEC33 /* image2.jpg */; };
 		A43C0C151AE2BB60006EEC33 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C111AE2BB60006EEC33 /* image1.jpg */; };
 		A43C0C1E1AE2FF9C006EEC33 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A43C0C1D1AE2FF9C006EEC33 /* Event.m */; };
-		A43C0C211AE318ED006EEC33 /* group.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A43C0C201AE318ED006EEC33 /* group.PNG */; };
 		A476D8971AE2545100623126 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8961AE2545100623126 /* ProfileVC.m */; };
 		A476D89A1AE2547200623126 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D8991AE2547200623126 /* PlanListVC.m */; };
 		A476D89D1AE2548C00623126 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A476D89C1AE2548C00623126 /* HistoryVC.m */; };
@@ -87,6 +87,7 @@
 		7D5D1AF91AE31DDD0051EEF6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7D5D1AFA1AE31DDD0051EEF6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7D5D1AFB1AE31DDD0051EEF6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7D5D1AFF1AE31F3E0051EEF6 /* group2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group2.png; sourceTree = "<group>"; };
 		7DEA24491AE2C82B001EB476 /* SingletonAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonAccelerator.h; sourceTree = "<group>"; };
 		7DEA244A1AE2C82B001EB476 /* SingletonAccelerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonAccelerator.m; sourceTree = "<group>"; };
 		7DEA244B1AE2C82B001EB476 /* SingletonGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonGPS.h; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		A43C0C111AE2BB60006EEC33 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		A43C0C1C1AE2FF9C006EEC33 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
 		A43C0C1D1AE2FF9C006EEC33 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
-		A43C0C201AE318ED006EEC33 /* group.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.PNG; sourceTree = "<group>"; };
 		A476D8951AE2545100623126 /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		A476D8961AE2545100623126 /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		A476D8981AE2547200623126 /* PlanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanListVC.h; sourceTree = "<group>"; };
@@ -254,6 +254,7 @@
 		A476D8C91AE284F200623126 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7D5D1AFF1AE31F3E0051EEF6 /* group2.png */,
 				7D5D1AE91AE30F2F0051EEF6 /* profile@2x.png */,
 				7D5D1AEA1AE30F2F0051EEF6 /* planlist@2x.png */,
 				7D5D1AEB1AE30F2F0051EEF6 /* friends@2x.png */,
@@ -424,8 +425,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5D1AF71AE30F2F0051EEF6 /* planlist@3x.png in Resources */,
+				7D5D1B001AE31F3E0051EEF6 /* group2.png in Resources */,
 				7D5D1ADA1AE2CA060051EEF6 /* JW.png in Resources */,
-				A43C0C211AE318ED006EEC33 /* group.PNG in Resources */,
 				7D5D1ADF1AE2CCF30051EEF6 /* walk_5.txt in Resources */,
 				7D5D1AF81AE30F2F0051EEF6 /* profile@3x.png in Resources */,
 				7D5D1AF11AE30F2F0051EEF6 /* profile@2x.png in Resources */,

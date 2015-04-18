@@ -428,21 +428,21 @@
                                     <rect key="frame" x="35" y="339" width="52" height="65"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JW.png" translatesAutoresizingMaskIntoConstraints="NO" id="o4q-u8-1eC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="116" width="104" height="108"/>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Wong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHg-CR-ndE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="211" y="129" width="85" height="21"/>
+                                    <rect key="frame" x="194" y="159" width="85" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JW.png" translatesAutoresizingMaskIntoConstraints="NO" id="o4q-u8-1eC">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="55" y="105" width="104" height="108"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -456,8 +456,8 @@
                                 <exclude reference="sFJ-il-FzR"/>
                                 <exclude reference="fxW-Zz-WpG"/>
                                 <exclude reference="4H2-tB-wf1"/>
-                                <exclude reference="QHg-CR-ndE"/>
                                 <exclude reference="o4q-u8-1eC"/>
+                                <exclude reference="QHg-CR-ndE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -471,8 +471,8 @@
                                 <include reference="sFJ-il-FzR"/>
                                 <include reference="fxW-Zz-WpG"/>
                                 <include reference="4H2-tB-wf1"/>
-                                <include reference="QHg-CR-ndE"/>
                                 <include reference="o4q-u8-1eC"/>
+                                <include reference="QHg-CR-ndE"/>
                             </mask>
                         </variation>
                     </view>
